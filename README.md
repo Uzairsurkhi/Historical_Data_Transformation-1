@@ -5,9 +5,13 @@ This Python script reads employee data from a CSV file, transforms it into a his
 Table of Contents
 
 Overview
+
 Methodology
+
 Assumptions
+
 Usage
+
 Example
 
 Overview
@@ -29,14 +33,19 @@ Output Creation: The transformed data is stored in a DataFrame and then saved to
 Assumptions
 
 The input CSV file contains columns such as 'Employee Code', 'Date of Joining', 'Date of Exit', 'Compensation', 'Compensation 1', 'Compensation 2', etc., in the expected format.
+
 Missing values in certain columns are handled by the script.
+
 The end date for each employee's record is calculated based on the next employee's joining date or set to '2100-01-01' if the employee is the last one in the group.
 
 Usage
+
 To use the script, call the process_employee_data function with the input CSV file path and the desired output CSV file path.
+
 process_employee_data("input.csv", "output.csv")
 
 Example
 
 process_employee_data("input.csv", "output.csv")
+
 This will read employee data from "input.csv", transform it, and save the transformed data to "output.csv".
